@@ -1,0 +1,33 @@
+{
+  "name": "linux_armv6l",
+  "title": "Linux ARMv6",
+  "description": "Linux ARMv6 is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.",
+  "url": "http://platformio.org/platforms/linux_arm",
+  "homepage": "http://platformio.org/platforms/linux_arm",
+  "license": "Apache-2.0",
+  "engines": {
+    "platformio": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsandmann/platform-linux_armv6l.git"
+  },
+  "version": "1.8.1",
+  "frameworks": {
+    "linux": {
+      "script": "builder/frameworks/linux.py"
+    }
+  },
+  "packages": {
+    "toolchain-mac-gccarmv6linuxgnueabi": {
+      "type": "toolchain",
+      "version": "https://github.com/tsandmann/armv6l-toolchain-mac.git"
+    }
+  },
+  "packages": {
+    "toolchain-linux-gccarmv6linuxgnueabi": {
+      "type": "toolchain",
+      "version": "https://github.com/tsandmann/armv6l-toolchain-linux.git"
+    }
+  }
+}
