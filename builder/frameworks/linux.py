@@ -20,13 +20,15 @@ env = DefaultEnvironment()
 
 env.Append(
     CPPFLAGS=[
+        "-mcpu=arm1176jzf-s",
+        "-mtune=arm1176jzf-s",
+        "-mfloat-abi=hard",
+        "-mfpu=vfp",
         "-O2",
         "-Wformat=2",
         "-Wall",
         "-Wextra",
-        "-Winline",
-        "-pipe",
-        "-fPIC"
+        "-Winline"
     ],
 
     LIBS=[
