@@ -22,9 +22,7 @@
     "toolchain-mac-gccarmv6linuxgnueabi": {
       "type": "toolchain",
       "version": "https://github.com/tsandmann/armv6l-toolchain-mac.git"
-    }
-  },
-  "packages": {
+    },
     "toolchain-linux-gccarmv6linuxgnueabi": {
       "type": "toolchain",
       "version": "https://github.com/tsandmann/armv6l-toolchain-linux.git"
